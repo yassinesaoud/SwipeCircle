@@ -19,7 +19,7 @@ const processFile = (filePath) => {
             const filename = src.split('/').pop();
             
             // Create new asset path
-            return `src="{{ asset('frontOffice/images/${filename}') }}"`;
+            return `src="{{ asset('backOffice/images/${filename}') }}"`;
         });
         
         // Write the modified content back to file
@@ -32,4 +32,4 @@ const processFile = (filePath) => {
 };
 
 // Usage example:
-processFile('./templates/front_office/services.html.twig');
+processFile('./templates/back-base.html.twig');
